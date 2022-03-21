@@ -34,11 +34,106 @@ p{
 .cardWrapper{
   height: 22rem;
   box-shadow: 1px 1px 9px;
+  position: relative;
 }
 .selected{
   height: 22rem;
   box-shadow: 1px 1px 20px green;
+  position: relative;
 }
+
+.comment{
+top: 40%;
+bottom: 0px;
+right: 0px;
+left: 0px;
+margin: auto;
+background-color: rgb(255, 255, 255);
+position: absolute;
+border-radius: 10px 10px 0px 0px;
+transition: top 1s ease-in;
+
+}
+
+.spinner{
+  top: 10%;
+bottom: 0px;
+right: 0px;
+left: 0px;
+margin: auto;
+background-color: rgb(255, 255, 255);
+position: absolute;
+border-radius: 10px 10px 0px 0px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.listComment{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3px 6px 0px;
+  margin-top: 6px;
+}
+.listComment>button{
+  border: 0px;
+  background-color: inherit;
+}
+
+
+.comment>div:first-of-type{
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  padding-top: 4px;
+}
+.comment>div:nth-child(2)>ul{
+  font-size: 12px;
+  margin-top: 4px;
+  background-color: aliceblue;
+}
+
+.comment>div:last-of-type{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0px 6px;
+  gap: 10px;
+  position: relative;
+  transform: translatey(40px);
+}
+
+.comment>div:last-of-type>button{
+ 
+  font-size: 12px;
+  border: 0px;
+  border-radius: 6px;
+  height: 40px;
+}
+.comment>div:last-of-type>button:first-of-type{
+  background-color: rgb(29, 158, 22);
+  color: white;
+  width: 100%;
+  box-shadow: 1px 1px 8px gray;
+}
+
+.comment>div:last-of-type>button:last-of-type{
+  background-color: rgb(29, 158, 22);
+  color: white;
+}
+
+.Nocomment{
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+.disabled{
+  display: none;
+
+}
+
 
 .imageDiv{
   width: 100%;
@@ -78,4 +173,97 @@ p{
   align-self: flex-start;
   border: 1px solid gray;
   border-radius: 6px;
+}
+
+.divider{
+  display: flex;
+  gap: 30px;
+}
+
+.divider>div:last-of-type{
+  min-width: 25vw;
+  max-height: 80vh;
+  background-color: aliceblue;
+  padding: 20px 40px;
+  position: relative;
+}
+.mt-3{
+  margin-left: 10vw !important;
+  margin-right: 10vw !important;
+  
+}
+
+.commentTitle{
+  display: flex;
+  justify-content: center;
+}
+
+.ImageHolder{
+  margin-top: 10px;
+  width: 100%;
+  height: 50%;
+  background-color: beige;
+}
+.ImageHolder>img:only-of-type{
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+/* comment component */
+
+.commetnwrap2{
+  margin: 6px;
+  height: 40%;
+  overflow: hidden;
+}
+.commetnwrap2>ul{
+  max-height: 70%;
+  background-color: white;
+  padding-right: 20px;
+  padding-top: 20px;
+  position: relative;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.commetnwrap2>ul>li{
+  display: flex;
+  justify-content: space-between;
+  
+}
+.addCommetn2{
+  width: 100%;
+  height: auto;
+
+}
+.addCommetn2>button{
+  width: 100%;
+  border-radius: 5%;
+  border: 0px;
+  height: 40px;
+  color: white;
+  background-color: rgb(65, 184, 17);
+}
+.addCommetn2>button:hover{
+  background-color: rgb(120, 241, 72);
+}
+
+.selectedBook2{
+
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  bottom: 6px;
+  left: 6px;
+  margin: auto;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.spinner2{
+  position: absolute;
+  top: 40%;
+  left: 40%;
 }

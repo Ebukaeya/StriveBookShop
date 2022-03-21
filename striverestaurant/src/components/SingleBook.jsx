@@ -1,15 +1,18 @@
 import { Container, Row, Col } from "react-bootstrap";
 import { Component } from "react";
+import CommentArea from "./CommentArea";
 
 class SingleBook extends Component {
   state = {
     selectedMove: false,
+    idOfSelected: this.props.asin
   };
 
   handleClick = (e) => {
     this.state.selectedMove
-      ? this.setState({ selectedMove: false })
-      : this.setState({ selectedMove: true });
+      ? this.setState({...this.state, selectedMove: false })
+      : this.setState({...this.state, selectedMove: true });
+       this.props.passBookID(this.state.idOfSelected, this.props.img)
   };
 
   render() {
@@ -48,6 +51,8 @@ class SingleBook extends Component {
             <div className="button">
               <button>Buy</button>
             </div>
+          {/*  { this.state.selectedMove &&<CommentArea id={this.state.idOfSelected}/>} */}
+          {/*  <CommentArea id={this.state.idOfSelected}/> */}
           </div>
         </Col>
       </>
