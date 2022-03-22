@@ -1,5 +1,6 @@
 import { Component } from "react";
 import { Spinner } from "react-bootstrap";
+/* needs to be changed to cla */
 
 class CommentArea2 extends Component {
   state = {
