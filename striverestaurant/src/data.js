@@ -25,7 +25,7 @@ let data = [
     "title": "The Female Quixote: or The Adventures of Arabella (Oxford World's Classics)",
     "img": "https://images-na.ssl-images-amazon.com/images/I/51x4zFJVgSL.jpg",
     "price": 6.22,
-    "category": "romance"
+    "category": "romance" 
     },
     {
     "asin": "0345511190",

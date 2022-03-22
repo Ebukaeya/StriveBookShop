@@ -218,7 +218,7 @@ align-items: center;
   overflow: hidden;
 }
 .commetnwrap2>ul{
-  max-height: 70%;
+  height: 70%;
   background-color: white;
   padding-right: 20px;
   padding-top: 20px;
@@ -266,4 +266,8 @@ align-items: center;
   position: absolute;
   top: 40%;
   left: 40%;
+}
+.nothingt{
+  margin-left: 25rw;
+  color: red;
 }
