@@ -5,14 +5,25 @@ import MyNavbar from "./components/Navbar";
 import MyFooter from "./components/Footer";
 import Welcome from "./components/Welcome";
 import LatestRelease from "./components/LatestRelease";
+import {BrowserRouter, Routes, Route} from "react-router-dom"
+import Registration from "./components/Registration";
 
 function App() {
   return (
     <>
-      <MyNavbar pages={["Home","About","Browse"]} />
-      <Welcome/>
-     <LatestRelease/>
-      <MyFooter/>
+      <BrowserRouter>
+        <MyNavbar pages={["Home","Registration","Browse"]} />
+        <Routes>
+        <Route path="/" element={<LatestRelease/>}  />
+        <Route path="/registration" element={<Registration/>}  />
+
+        <Route path="*" element = {<div>404 not found</div>}  />
+
+        
+          
+        </Routes>
+        <MyFooter/>
+      </BrowserRouter>
     </>
   );
 }

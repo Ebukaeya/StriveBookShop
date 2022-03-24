@@ -3,6 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import { Component } from "react";
 import SingleBook from "./SingleBook";
 import CommntSection from "./CommentSection"
+import Welcome from "./Welcome";
 
 
 let data = myData;
@@ -29,6 +30,7 @@ class LatestRelease extends Component {
   render() {
     return (
       <>
+       <Welcome />
         <div className="mt-3">
           <div className="searchBar">
             {" "}

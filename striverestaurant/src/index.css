@@ -271,3 +271,12 @@ align-items: center;
   margin-left: 25rw;
   color: red;
 }
+
+.myForm{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.myForm>Form{
+  width: 30%;
+}
